@@ -55,7 +55,7 @@ I have implemented Deep Q networks using artificial neural networks and pixel in
 
 
 2. Deep Q networks using convolutional neural networks:
-- [cnn_model.py](model.py) file contains the CNN model architecture
+- [cnn_model.py](cnn_model.py) file contains the CNN model architecture
 - [cnn_agent.py](cnn_agent.py) contains the Deep Q learning helper code.
 - run the [Navigation_Pixels.ipynb](Navigation_Pixels.ipynb) file to train the model and visualize the agent.
 
