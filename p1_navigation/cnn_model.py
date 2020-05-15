@@ -26,8 +26,9 @@ class QNetwork(nn.Module):
         self.fc3 = nn.Linear(128, 32)
         self.fc4 = nn.Linear(32, action_size)
 
-    def output_size(n, p, f, s):
-        output_size = int ((n + 2*p - f) / s) + 1
+    def output_size(self, n, p, f, s):
+        self.output_size = int ((n + 2*p - f) / s) + 1
+        return self.output_size
 
     def forward(self, state):
         """Build a network that maps state -> action values."""
